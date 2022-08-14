@@ -19,10 +19,11 @@ const Review = () => {
     }
   };
   const randomPerson=()=>{
-    let randomNumber = Math.floor(Math.random()*people.length)
+    let randomNumber = Math.floor(Math.random()*(people.length-1))
     if(randomNumber === index){
        randomNumber =index +1
     }
+    console.log(randomNumber)
     setIndex(randomNumber)
   }
   return (
